@@ -1,0 +1,152 @@
+/*----------*/
+/*---------------*/
+/*--- Crystal Component ---*/
+
+.crystalContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.crystalContent {
+  z-index: 200;
+  position: relative;
+  width: 400px;
+  height: 600px;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0px auto;
+}
+
+.crystalShadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://svgshare.com/i/DCG.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom center;
+  bottom: -20%;
+  animation: shadow 3s ease infinite;
+}
+
+.crystalMain {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://svgshare.com/i/DBA.svg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center center;
+  animation: crystal 3s ease-out infinite;
+}
+
+.crystalFragments {
+  z-index: 20;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://svgshare.com/i/DAo.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  top: 0;
+  animation: fragments 3s ease infinite;
+}
+
+.crystalGlow {
+  z-index: 15;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://svgshare.com/i/DBj.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  top: -5%;
+  animation: glow 3s ease-out infinite;
+}
+
+@media only screen and (max-width: 900px) {
+  .crystalContainer {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    margin: 0px auto;
+  }
+}
+
+@keyframes glow {
+  0% {
+    top: 0%;
+    opacity: 0.7;
+  }
+  50% {
+    top: -8%;
+    opacity: 1;
+  }
+  100% {
+    top: 0%;
+    opacity: 0.7;
+  }
+}
+
+@keyframes shadow {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes crystal {
+  0% {
+    top: 0%;
+  }
+  40% {
+    top: -8%;
+  }
+  80% {
+    top: 0%;
+  }
+}
+
+@keyframes fragments {
+  0% {
+    top: 0%;
+  }
+  50% {
+    top: -8%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+/*
+socialflow logo hashtag:
+https://svgshare.com/i/DAT.svg
+*/
+
+@media only screen and (max-width: 900px) {
+  .crystalContainer {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .crystalContent {
+    z-index: 300;
+    position: relative;
+    width: 200px;
+    height: 300px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0px auto;
+  }
+}
